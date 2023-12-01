@@ -29,7 +29,17 @@
         transform: translatey(0px);
       }
 }
-
+@keyframes hilite{
+    0%{
+        box-shadow: 0px 0px 20px 20px #3b3b3b;
+    }
+    50%{
+        box-shadow: 0px 0px 20px 20px #797979;
+    }
+    0%{
+        box-shadow: 0px 0px 20px 20px #3b3b3b;
+    }
+}
 
 .filler-1{
     font-size: 10px;
@@ -66,9 +76,12 @@ a{
     font-size: larger;
     text-decoration: none;
     color: antiquewhite;
+    transition: 0.5s;
 }
 
-
+a:hover{
+    scale: 120%;
+}
 
 body{
     background-color: rgb(5, 5, 5);
@@ -92,6 +105,10 @@ body{
   border-radius: 50%;  
 }
 
+.elle:hover{
+    animation: hilite 2s infinite;
+}
+
 .psych{
     max-width: 400px;
     max-height: 400px;
@@ -99,11 +116,19 @@ body{
   border-radius: 50%;
 }
 
+.psych:hover{
+    animation: hilite 2s infinite;
+}
+
 .lod{
     max-width: 400px;
     max-height: 400px;
   box-shadow: 0px 0px 20px 20px #3b3b3b;
   border-radius: 50%;
+}
+
+.lod:hover{
+    animation: hilite 2s infinite;
 }
 
 .top{
@@ -122,6 +147,9 @@ body{
   border-radius: 50%;
 }
 
+.wid:hover{
+    animation: hilite 2s infinite;
+}
 
 .lookeye{
   border-radius: 100%;
@@ -136,6 +164,9 @@ body{
     border-radius: 50%;
 }
 
+.mugshot:hover{
+    animation: hilite 2s infinite;
+}
 
 
 .filler{
@@ -186,12 +217,19 @@ padding-left: 10px;
     border-radius: 50%;
 }
 
+.forest:hover{
+    animation: hilite 2s infinite;
+}
 
 .tvims{
     max-width: 400px;
     max-height: 400px;
     box-shadow: 0px 0px 20px 20px #3b3b3b;
     border-radius: 50%;
+}
+
+.tvims:hover{
+    animation: hilite 2s infinite;
 }
 
 .kitty{
@@ -201,6 +239,9 @@ padding-left: 10px;
     border-radius: 50%;
 }
 
+.kitty:hover{
+    animation: hilite 2s infinite;
+}
 
 .contact{
     display: flex;
@@ -280,6 +321,7 @@ input[type=submit]{
         list-style-type: none; 
         margin: 0;
         padding:0;
+        width: 80%;
     }
     
     li{
